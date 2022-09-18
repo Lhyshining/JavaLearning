@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
         lst.push_back(i);
     }
     Print(lst);
-
+    cout << "1" << endl;
     return 0;
 }
