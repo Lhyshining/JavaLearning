@@ -1,3 +1,5 @@
+package base;
+
 public class Variable {
     // 类变量 static
     static double salary = 100;
