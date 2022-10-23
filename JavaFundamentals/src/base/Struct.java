@@ -35,7 +35,21 @@ public class Struct {
             int i = 0;
         }
 
+        // do...while
+        do {
+            int i = 0;
+        } while (flag);
 
+        // for
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+
+        // for 遍历数组元素
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int i : numbers) {
+            System.out.println(i);
+        }
 
     }
 }
