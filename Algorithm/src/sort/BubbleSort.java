@@ -10,18 +10,20 @@ public class BubbleSort {
 
     public static void bubbleSort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
-            for (int j = i; j < array.length; j++) {
-                if (array[i] < array[j]) {
-                    swap(array[i], array[j]);
+            // 全程无交换标识符
+            int flag = 0;
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                    flag = 1;
                 }
             }
+            if (flag == 0) {
+                break;
+            }
         }
-    }
-
-    public static void swap(int a, int b) {
-        int temp = a;
-        a = b;
-        b = temp;
     }
 
     public static void printArray(int[] array) {
