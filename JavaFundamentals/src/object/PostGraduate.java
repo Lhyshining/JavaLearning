@@ -13,4 +13,8 @@ public class PostGraduate extends Student {
     public void test() {
         System.out.println("Postgraduate test");
     }
+
+    public void sonMethod() {
+        System.out.println("只在子类声明");
+    }
 }
