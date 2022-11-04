@@ -8,6 +8,12 @@ public class Array {
         for (int i = 0; i < arr.length; ++i) {
             arr[i] = i;
         }
+        // 引用传递
+        int[] arr2 = arr; // 引用传递，arr2和arr共享一个地址，修改arr2,arr也会随之修改
+        // 拷贝构造
+
+
+
         printArray(arr);
         int[] reverseArr = reverseArray(arr);
         printArray(reverseArr);
@@ -18,9 +24,9 @@ public class Array {
         System.out.println(twoDimensionalArray2[0][0]);
         // 打印2维数组
         System.out.println("遍历2维数组：");
-        for (int i = 0; i < twoDimensionalArray2.length; i++) {
-            for (int j = 0; j < twoDimensionalArray2[i].length; j++) {
-                System.out.print(twoDimensionalArray2[i][j] + " ");
+        for (int[] ints : twoDimensionalArray2) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println(" ");
         }
