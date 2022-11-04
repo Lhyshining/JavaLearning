@@ -11,6 +11,11 @@ public class PolyArray {
         for (Person i : persons) {
             // 编译类型是Person， 运行类型看右边
             System.out.println(i.say()); // 动态绑定机制
+            if (i instanceof Student) {
+                ((Student) i).study();
+            } else if (i instanceof Teacher) {
+                ((Teacher) i).teach();
+            }
         }
     }
 }

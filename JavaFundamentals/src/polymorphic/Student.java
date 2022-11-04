@@ -20,4 +20,8 @@ public class Student extends Person{
     public String say() {
         return super.say() + " " +this.grade;
     }
+
+    public void study() {
+        System.out.println(getName() + " is studying" );
+    }
 }

@@ -1,6 +1,6 @@
 package polymorphic;
 
-public class Teacher extends Person{
+public class Teacher extends Person {
     private int salary;
 
     public Teacher(String name, int age, int salary) {
@@ -19,5 +19,9 @@ public class Teacher extends Person{
     @Override
     public String say() {
         return super.say() + " " + this.salary;
+    }
+
+    public void teach() {
+        System.out.println(getName() + " is teaching");
     }
 }
