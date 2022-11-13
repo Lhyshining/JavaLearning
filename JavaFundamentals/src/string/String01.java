@@ -6,5 +6,8 @@ public class String01 {
         String str1 = "mark";
         String str2 = new String("mark");
         System.out.println(str1 + str2);
+        System.out.println(str1 == str2.intern());
+        System.out.println(str2 == str2.intern());
+
     }
 }
