@@ -44,7 +44,7 @@ public class ListMethod {
         System.out.println(list);
 
         // addAll
-//        void addAll(int index, Object ele); 在index处插入对象
+        // void addAll(int index, Object ele); 在index处插入对象
         ArrayList list2 = new ArrayList();
         list2.add(1);
         list2.add(2);
