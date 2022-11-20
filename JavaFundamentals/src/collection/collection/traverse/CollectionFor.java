@@ -1,4 +1,4 @@
-package collection.traverse;
+package collection.collection.traverse;
 
 import java.util.ArrayList;
 import java.util.Collection;
