@@ -11,7 +11,7 @@ public class MapTraverse {
         map.put("john", "john");
         map.put(null, null);
 
-        // 1. 先取出所有的Key，通过Key取出对应的Value
+        // 1. 先取出所有的Key，通过Key取出对应的Value,keySet为Map接口
         Set keySet = map.keySet();
         // (1) forI
         System.out.println("--------1.1--------");
@@ -31,7 +31,7 @@ public class MapTraverse {
         // (1) forI
         // (2) Iterator
 
-        // 3. entrySet获取
+        // 3. Map$entrySet获取
         Set entrySet = map.entrySet();
         // (1) forI
         System.out.println("--------3.1--------");
@@ -47,6 +47,10 @@ public class MapTraverse {
             Map.Entry entry = (Map.Entry) o;
             System.out.println(entry.getKey() + "-" + entry.getValue());
         }
+
+        // 4. 使用HashMap类
+
+
 
     }
 }
