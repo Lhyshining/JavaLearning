@@ -6,6 +6,7 @@ public class Generic01 {
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         Person<Integer> person = new Person<Integer>(1);
+        ArrayList list = new ArrayList(); // 默认ArrayList<Object> list = new ArrayList<>();
     }
 }
 
