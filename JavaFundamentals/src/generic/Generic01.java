@@ -13,6 +13,7 @@ public class Generic01 {
 class Person<E> {
     private E s;
 
+
     public Person(E s) {
         this.s = s;
     }
