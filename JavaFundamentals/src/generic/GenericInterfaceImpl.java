@@ -16,3 +16,4 @@ public class GenericInterfaceImpl implements GenericInterface<String, Double> {
 
     }
 }
+
