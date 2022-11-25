@@ -54,8 +54,8 @@ public class BubbleSort {
 
     // 对数器
     public static int[] generateRandomArray(int maxSize, int maxNum) {
-        int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
-        for (int i = 0; i < arr.length; i++) {
+        int[] arr = new int[(int) ((maxSize + 1) * Math.random())]; // 长度随机
+        for (int i = 0; i < arr.length; i++) { // 值随机
             arr[i] = (int) (Math.random() * (maxNum + 1)) - (int) (Math.random() * maxNum);
         }
         return arr;
