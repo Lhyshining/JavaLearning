@@ -9,8 +9,17 @@ public class BubbleSort {
         new BubbleSort().bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
-
+    /*
+        0 * * * * *
+        1 * * * * @
+        2 * * * @ @
+        3 * * @ @ @
+        4 * @ @ @ @
+     */
     public void bubbleSort(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
