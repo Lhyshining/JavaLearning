@@ -44,7 +44,6 @@ public class InversePairsArray {
                     int[] ints = {arr[j], arr[p2]};
                     ans.add(ints);
                 }
-
                 arr_temp[i++] = arr[p2++];
             }
         }
