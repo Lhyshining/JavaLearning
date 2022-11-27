@@ -26,7 +26,7 @@ public class MergeSort {
         int[] arr_temp = new int[right - left + 1];
         int i = 0;
         while (p1 <= mid && p2 <= right) {
-            arr_temp[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
+            arr_temp[i++] = arr[p1] <= arr[p2] ? arr[p1++] : arr[p2++]; // <= 可保证相对稳定
         }
         while (p1 <= mid) {
             arr_temp[i++] = arr[p1++];
