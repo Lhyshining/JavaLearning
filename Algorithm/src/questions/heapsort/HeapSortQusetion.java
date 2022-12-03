@@ -1,5 +1,6 @@
 package questions.heapsort;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class HeapSortQusetion {
@@ -11,7 +12,7 @@ public class HeapSortQusetion {
         答：从0开始，构建k窗口，使用小根堆
          */
         // 优先级队列为小根堆
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>(new MyIncedentComparator());
         minHeap.add(8);
         minHeap.add(7);
         minHeap.add(6);
@@ -23,4 +24,22 @@ public class HeapSortQusetion {
             System.out.println(minHeap.poll());
         }
     }
+
+    public static class MyIncedentComparator implements Comparator {
+        /**
+         * 相减 -1 第一个参数放前面
+         * 1 第二个参数放前面
+         * 0 无所谓
+         *
+         * @param o1  第一个参数
+         * @param o2 第二个参数
+         * @return value
+         */
+        @Override
+        public int compare(Object o1, Object o2) {
+            return (int) o1 - (int) o2;
+        }
+    }
 }
+
+
